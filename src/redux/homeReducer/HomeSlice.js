@@ -22,14 +22,15 @@ const homeReducer = createSlice({
         state.loading = true;
       })
       .addCase(fetchKatBreeds.fulfilled, (state, action) => {
-        loading = false;
+        state.loading = false;
         state.breedList = action.payload.map((eachKat) => ({
           id: eachKat.id,
           name: eachKat.name,
-          url: eachKat.url,
-        }))
+          origin: eachKat.origin,
+          imperial: eachKat.weight.imperial,
+        }));
       })
-      .addCase(fetchKatBreeds.rejected, (state) => {
+      .addCase(fetchKatBreeds.rejected, (state, action) => {
         state.loading = false;
         state.error = action.error;
       });
