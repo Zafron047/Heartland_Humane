@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 import { fetchKatBreeds } from '../redux/homeReducer/HomeSlice';
 
 const Home = () => {
@@ -23,22 +24,22 @@ const Home = () => {
       <ul>
         {breedList.map((breed) => (
           <li key={breed.id}>
-            <h2>
-              Breed:
-              {' '}
-              {breed.name}
-            </h2>
-            <p>
-              Origin:
-              {' '}
-              {breed.origin}
-            </p>
-            <p>
-              Weight:
-              {' '}
-              {breed.imperial}
-            </p>
-            <button type="button">Details</button>
+            <Link to={`/Details/${breed.id}`}>
+              <div>
+                <h2>
+                  Breed:
+                  {breed.name}
+                </h2>
+                <p>
+                  Origin:
+                  {breed.origin}
+                </p>
+                <p>
+                  Weight:
+                  {breed.imperial}
+                </p>
+              </div>
+            </Link>
           </li>
         ))}
       </ul>

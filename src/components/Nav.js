@@ -5,12 +5,9 @@ const Nav = () => (
   <ul>
     <li>
       <Link to="/">
-        Home
-      </Link>
-    </li>
-    <li>
-      <Link to="/Details">
-        Details
+        <button type="button">
+          Back to Home
+        </button>
       </Link>
     </li>
   </ul>
