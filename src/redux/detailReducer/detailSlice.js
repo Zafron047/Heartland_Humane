@@ -26,11 +26,11 @@ const detailReducer = createSlice({
           id: breed.id,
           url: breed.url,
           name: breed.breeds[0].name,
-          life_span: breed.breeds[0].life_span,
+          lifeSpan: breed.breeds[0].life_span,
           adaptability: breed.breeds[0].adaptability,
-          affection_level: breed.breeds[0].affection_level,
-          energy_level: breed.breeds[0].energy_level,
-          health_issues: breed.breeds[0].health_issues,
+          affectionLevel: breed.breeds[0].affection_level,
+          energyLevel: breed.breeds[0].energy_level,
+          healthIssues: breed.breeds[0].health_issues,
           intelligence: breed.breeds[0].intelligence,
         }));
       })

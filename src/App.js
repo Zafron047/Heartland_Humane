@@ -9,8 +9,8 @@ function App() {
     <BrowserRouter>
       <Nav />
       <Routes>
-        <Route exact path="/" Component={Home} />
-        <Route exact path="/Details" Component={Details} />
+        <Route path="/" Component={Home} />
+        <Route path="/Details" Component={Details} />
       </Routes>
     </BrowserRouter>
   );
