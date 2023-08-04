@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { fetchKatBreeds } from '../redux/homeReducer/HomeSlice';
+import '../styles/Home.css';
 
 const Home = () => {
   const breedList = useSelector((state) => state.AllKats.breedList);
@@ -31,32 +32,30 @@ const Home = () => {
   } else {
     content = (
       <>
-        <input
-          type="text"
-          placeholder="Search by breed name..."
-          value={searchQuery}
-          onChange={handleSearchInputChange}
-        />
-        <ul>
+        <div className="search-bar-wrapper">
+          <input
+            type="text"
+            placeholder="Search by breed name..."
+            value={searchQuery}
+            onChange={handleSearchInputChange}
+          />
+        </div>
+        <ul className="table">
           {filteredBreeds.map((breed) => (
-            <li key={breed.id}>
-              <Link to={`/Details/${breed.id}`}>
-                <div>
+            <Link className="table-row" key={breed.id} to={`/Details/${breed.id}`}>
+              <li className="table-cell custom-li">
+                <div className="left-wing">
                   <h2>
-                    Breed:
                     {breed.name}
                   </h2>
-                  <p>
+                  <p className="feature">
                     Origin:
+                    {' '}
                     {breed.origin}
                   </p>
-                  <p>
-                    Weight:
-                    {breed.imperial}
-                  </p>
                 </div>
-              </Link>
-            </li>
+              </li>
+            </Link>
           ))}
         </ul>
       </>
@@ -64,8 +63,11 @@ const Home = () => {
   }
 
   return (
-    <div>
-      <h1>Cats all breeds.</h1>
+    <div className="home-container">
+      <div className="header">
+        <img className="header-img" src="../../assets/cat.jpg" alt="Header" />
+        {/* <h1 className="headline">Adopt a Cat</h1> */}
+      </div>
       {content}
     </div>
   );

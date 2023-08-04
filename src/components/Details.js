@@ -8,7 +8,6 @@ const Details = () => {
   const breedData = useSelector((state) => state.CatBreeds.breedData);
   const loading = useSelector((state) => state.CatBreeds.loading);
   const error = useSelector((state) => state.CatBreeds.error);
-  console.log(breedData);
   const dispatch = useDispatch();
   const { breedId } = useParams();
 
