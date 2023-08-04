@@ -27,7 +27,7 @@ const Home = () => {
   let content;
 
   if (loading) {
-    content = <p>Loading...</p>;
+    content = <p className="home-loading">Loading...</p>;
   } else if (error) {
     content = <p>{error}</p>;
   } else {

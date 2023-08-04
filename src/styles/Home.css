@@ -114,4 +114,15 @@
   .feature {
     font-size: small;
   }
+
+  .home-loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    font-size: 12vw;
+    /* height: 100vh; */
+    /* background-color: rgba(205, 44, 125, 0.819); */
+    /* margin: 0; */
+  }
 }

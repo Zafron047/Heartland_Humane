@@ -17,7 +17,7 @@ const Details = () => {
   }, [dispatch, breedId]);
 
   if (loading) {
-    return <p>Loading...</p>;
+    return <p className="loading">Loading...</p>;
   } if (error) {
     return (
       <p>
@@ -40,7 +40,8 @@ const Details = () => {
             Lifespan:
             {' '}
             {breedData[0].lifeSpan}
-            years.
+            {' '}
+            years
           </p>
           <p className="breed-feature">
             Adaptability:

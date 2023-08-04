@@ -5,9 +5,7 @@ import '../styles/Detail.css';
 const Nav = () => (
   <nav className="nav">
     <Link to="/">
-      <button type="button">
-        Back to Home
-      </button>
+      <div className="Back-Button">&#60;</div>
     </Link>
   </nav>
 );
