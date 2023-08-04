@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { fetchKatBreeds } from '../redux/homeReducer/HomeSlice';
 import '../styles/Home.css';
 import arrow from '../assets/arrowRight.svg';
+import cat from '../assets/cat.jpg';
 
 const Home = () => {
   const breedList = useSelector((state) => state.AllKats.breedList);
@@ -66,8 +67,7 @@ const Home = () => {
   return (
     <div className="home-container">
       <div className="header">
-        <img className="header-img" src="../../assets/cat.jpg" alt="Header" />
-        {/* <h1 className="headline">Adopt a Cat</h1> */}
+        <img className="header-img" src={cat} alt="Header" />
       </div>
       {content}
     </div>
