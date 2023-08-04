@@ -27,8 +27,6 @@ const homeReducer = createSlice({
           id: eachKat.id,
           name: eachKat.name,
           origin: eachKat.origin,
-          description: eachKat.description,
-          imperial: eachKat.weight.imperial,
         }));
       })
       .addCase(fetchKatBreeds.rejected, (state, action) => {
