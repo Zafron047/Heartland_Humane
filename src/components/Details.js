@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import Nav from './Nav';
 import { fetchBreed } from '../redux/detailReducer/detailSlice';
+import '../styles/Detail.css';
 
 const Details = () => {
   const breedData = useSelector((state) => state.CatBreeds.breedData);
@@ -25,51 +26,68 @@ const Details = () => {
       </p>
     );
   } return (
-    <>
+    <div className="container">
       <Nav />
-      <ul>
+      {breedData.length > 0 && (
+      <>
+        <h1 className="detail-header">
+          Breed:
+          {' '}
+          {breedData[0].name}
+        </h1>
+        <div className="grid-container">
+          <p className="breed-feature">
+            Lifespan:
+            {' '}
+            {breedData[0].lifeSpan}
+            years.
+          </p>
+          <p className="breed-feature">
+            Adaptability:
+            {' '}
+            {breedData[0].adaptability}
+            {' '}
+            / 5
+          </p>
+          <p className="breed-feature">
+            AffectionLevel:
+            {' '}
+            {breedData[0].affectionLevel}
+            {' '}
+            / 5
+          </p>
+          <p className="breed-feature">
+            EnergyLevel:
+            {' '}
+            {breedData[0].energyLevel}
+            {' '}
+            / 5
+          </p>
+          <p className="breed-feature">
+            HealthIssues:
+            {' '}
+            {breedData[0].healthIssues}
+            {' '}
+            / 5
+          </p>
+          <p className="breed-feature">
+            Intelligence:
+            {' '}
+            {breedData[0].intelligence}
+            {' '}
+            / 5
+          </p>
+        </div>
+      </>
+      )}
+      <ul className="img-container">
         {breedData.map((item) => (
-          <li key={item.id}>
-            <img src={item.url} alt="A Cat" />
-            <h2>
-              Name:
-              {' '}
-              {item.name}
-            </h2>
-            <p>
-              Lifespan:
-              {' '}
-              {item.lifeSpan}
-            </p>
-            <p>
-              Adaptability:
-              {' '}
-              {item.adaptability}
-            </p>
-            <p>
-              AffectionLevel:
-              {' '}
-              {item.affectionLevel}
-            </p>
-            <p>
-              EnergyLevel:
-              {' '}
-              {item.energyLevel}
-            </p>
-            <p>
-              HealthIssues:
-              {' '}
-              {item.healthIssues}
-            </p>
-            <p>
-              Intelligence:
-              {' '}
-              {item.intelligence}
-            </p>
+          <li className="image-box" key={item.id}>
+            <img className="cat-img" src={item.url} alt="A Cat" />
           </li>
         ))}
       </ul>
-    </>
+    </div>
   );
 };
 

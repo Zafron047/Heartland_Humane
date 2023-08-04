@@ -1,6 +1,6 @@
 @media only screen and (max-width: 767px) {
   .home-container {
-    background-color: rgba(255, 105, 180, 0.745);
+    background-color: rgba(205, 44, 125, 0.819);
     /* padding: 20px; */
     min-height: 100vh;
     display: flex;
@@ -13,7 +13,7 @@
   }
 
   .header-img {
-    width: 400px;
+    width: 90vw;
     border-radius: 30px;
     opacity: 0.8;
     margin: 1.5rem 0;
@@ -26,17 +26,12 @@
   }
 
   .search-bar-wrapper {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
-  }
-  
-  a {
-    text-decoration: none;
-    outline: none; 
   }
 
   input[type="text"] {
-    width: 100%;
+    width: 80%;
     padding: 10px;
     margin-bottom: 10px;
     font-size: 16px;
@@ -76,61 +71,47 @@
     color: purple;
   }
 
-  .table-row {
-    /* display: table-row; */
-  }
-
   .table-cell {
+    position: relative;
     background-color: rgb(255, 105, 180);
-    display: flex;
-    /* gap: 5%; */
-    /* border: 2px solid aliceblue; */
-    justify-content: center;
-    align-items: center;
-    padding: 10px 15px;
+    border-radius: 10px;
     border-bottom: 1px solid #ccc;
     text-align: center;
-    width: 8rem;
-    height: 7rem;
+    width: 10rem;
+    height: 10rem;
   }
 
-  .custom-li {
-    /* background-image: url("../../public/assets/shape.jpg"); */
-    /* opacity: 0.9; */
-    /* You can also adjust other background properties here, like size, position, etc. */
+  .arrow {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    opacity: 0.6;
   }
-  /* .left-wing {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-width: 120px; */
+
+  .left-wing {
+    position: absolute;
+    bottom: 10px;
+    width: 90%;
+    /* min-width: 120px; */
     /* border: 2px solid aliceblue; */
-    /* padding: 10px; */
-  /* } */
+    /* text-align: center; */
+    left: 50%; 
+    transform: translateX(-50%);
+    /* padding: 5px; */
+  }
 
   /* h1 {
     color: aliceblue;
   } */
 
-  h2 {
-    margin: 0 0 10px 0;
+  .breed-name {
+    /* margin: 0 0 10px 0; */
+    font-size: 1.4rem;
     /* font-size: 3vw; */
-    text-decoration: none;
-  }
-
-  .description {
-    font-size: 1rem;
-    margin-top: 10px;
+    /* text-decoration: none; */
   }
 
   .feature {
-    margin: 0;
     font-size: small;
   }
-}
-
-a:focus,
-a:active {
-  outline: none;
 }

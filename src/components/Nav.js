@@ -1,16 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import '../styles/Detail.css';
 
 const Nav = () => (
-  <ul>
-    <li>
-      <Link to="/">
-        <button type="button">
-          Back to Home
-        </button>
-      </Link>
-    </li>
-  </ul>
+  <nav className="nav">
+    <Link to="/">
+      <button type="button">
+        Back to Home
+      </button>
+    </Link>
+  </nav>
 );
 
 export default Nav;

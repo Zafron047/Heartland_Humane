@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { fetchKatBreeds } from '../redux/homeReducer/HomeSlice';
 import '../styles/Home.css';
+import arrow from '../assets/arrowRight.svg';
 
 const Home = () => {
   const breedList = useSelector((state) => state.AllKats.breedList);
@@ -32,20 +33,20 @@ const Home = () => {
   } else {
     content = (
       <>
-        <div className="search-bar-wrapper">
-          <input
-            type="text"
-            placeholder="Search by breed name..."
-            value={searchQuery}
-            onChange={handleSearchInputChange}
-          />
-        </div>
+        <input
+          className="search-bar-wrapper"
+          type="text"
+          placeholder="Search by breed name..."
+          value={searchQuery}
+          onChange={handleSearchInputChange}
+        />
         <ul className="table">
           {filteredBreeds.map((breed) => (
             <Link className="table-row" key={breed.id} to={`/Details/${breed.id}`}>
-              <li className="table-cell custom-li">
+              <li className="table-cell">
+                <img className="arrow" alt="arrow" src={arrow} />
                 <div className="left-wing">
-                  <h2>
+                  <h2 className="breed-name">
                     {breed.name}
                   </h2>
                   <p className="feature">
