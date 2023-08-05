@@ -8,7 +8,7 @@ describe('Nav', () => {
     const { container } = render(
       <Router>
         <Nav />
-      </Router>
+      </Router>,
     );
 
     expect(container).toMatchSnapshot();

@@ -1,10 +1,9 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import axios from 'axios';
-import { urlAPI } from '../../components/API';
 
 export const fetchKatBreeds = createAsyncThunk('Fetch/AllKats',
   async () => {
-    const response = await axios.get(urlAPI);
+    const response = await axios.get('https://api.thecatapi.com/v1/breeds');
     return response.data;
   });
 
