@@ -20,6 +20,7 @@ const homeReducer = createSlice({
     builder
       .addCase(fetchKatBreeds.pending, (state) => {
         state.loading = true;
+        state.error = null;
       })
       .addCase(fetchKatBreeds.fulfilled, (state, action) => {
         state.loading = false;
@@ -31,9 +32,9 @@ const homeReducer = createSlice({
       })
       .addCase(fetchKatBreeds.rejected, (state, action) => {
         state.loading = false;
-        state.error = action.error;
+        state.error = action.error.message;
       });
   },
 });
 
-export default homeReducer;
+export default homeReducer.reducer;

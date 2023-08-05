@@ -4,8 +4,8 @@ import detailReducer from './detailReducer/detailSlice';
 
 const store = configureStore({
   reducer: {
-    AllKats: homeReducer.reducer,
-    CatBreeds: detailReducer.reducer,
+    AllKats: homeReducer,
+    CatBreeds: detailReducer,
   },
 });
 
