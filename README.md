@@ -11,6 +11,7 @@
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
+  - [🚀 Project presentation](#project-presentation)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -28,6 +29,8 @@
 ## 📖 Heartland Humane <a name="#about-project"></a>
 
 **Heartland Humane** is an innovative web application that serves as both a cat rescue and adoption service, allowing users to explore and discover various cat breeds from around the world. With a vast collection of adorable cat images and detailed information about each breed's characteristics, Heartland Humane promises an enjoyable experience for cat enthusiasts and curious users alike.
+
+[![App Demo](src/assets/previewApp.gif)](link-to-your-video)
 
 ## 🛠 Built With <a name="built-with">React-Redux</a>
 
@@ -60,6 +63,8 @@
 ## 🚀 Live Demo <a name="#live-demo"></a>
 
 - [Click here](https://heartland-humane-cat-adoption.onrender.com) to see Live Demo.
+## 🚀 Project presentation <a name="#project-presentation"></a>
+- [Click here](https://drive.google.com/file/d/1LdXFkPiv_wzXTZy9BjqvAYO8PXzBX5FE/view?usp=sharing) to see presentation.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -150,7 +155,7 @@ If you like this project you can recommend to your friend, family and colleagues
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 
-**I would like to thank microverse for guiding and providing with all great material to do my projects**
+*I would like to thank ***Nelson Sakwa*** for the exceptional design on Behance that served as a constant source of inspiration throughout my project journey. Additionally, I extend my sincere appreciation to the team at **Microverse** for their invaluable guidance and abundant resources, which played a pivotal role in shaping the successful outcome of my projects. Their unwavering support has been instrumental in my growth as a professional, and I am truly thankful for the opportunities they have provided.*
 
 ## 📝 License <a name="license"></a>
 
