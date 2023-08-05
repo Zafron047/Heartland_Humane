@@ -1,4 +1,4 @@
-  # Space traveler's hub
+  # Heartland Humane
 </br>
 <a name="readme-top"></a>
 
@@ -25,9 +25,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-## 📖 Space traveler's hub <a name="#about-project"></a>
+## 📖 Heartland Humane <a name="#about-project"></a>
 
-**Space traveler's hub** is a project where real live data from the SpaceX API is fetched to build a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.
+**Heartland Humane** is an innovative web application that serves as both a cat rescue and adoption service, allowing users to explore and discover various cat breeds from around the world. With a vast collection of adorable cat images and detailed information about each breed's characteristics, Heartland Humane promises an enjoyable experience for cat enthusiasts and curious users alike.
 
 ## 🛠 Built With <a name="built-with">React-Redux</a>
 
@@ -38,6 +38,7 @@
   <ul>
     <li><a href="">React.js</a></li>
     <li><a href="">React Redux</a></li>
+    <li><a href="">React Testing Library</a></li>
   </ul>
 </details>
 
@@ -52,14 +53,13 @@
 - **[React Components]**
 - **[React JSX]**
 - **[React Redux]**
-- **[AXIOS API]**
+- **[Axios]**
 
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="#live-demo"></a>
 
-- [Click here](https://microverse-space-travelers-hub.onrender.com) to see Live Demo.
-
+- [Click here](https://heartland-humane-cat-adoption.onrender.com) to see Live Demo.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -81,7 +81,7 @@ Clone this repository to your desired folder:
 
 ```
 cd my-folder
-  git clone https://github.com/Zafron047/space_travelers_hub.git
+  git clone https://github.com/Zafron047/Heartland_Humane.git
 ```
 
 ### Install
@@ -130,12 +130,6 @@ You can deploy this project using:
 - LinkedIn: [&nbsp; LinkedIn](https://www.linkedin.com/in/nohain-islam/)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-👤 **Zuheb Ahmed**
-
-- GitHub: [&nbsp; &nbsp; @githubhandle](https://github.com/zuhebahmed88091)
-- Twitter: [&nbsp; &nbsp; @twitterhandle](https://twitter.com/ZuhebAhmed88091)
-- LinkedIn: [&nbsp; LinkedIn](https://www.linkedin.com/in/zuheb-ahmed/)
-
 
 <!-- CONTRIBUTING -->
 
@@ -143,7 +137,7 @@ You can deploy this project using:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Zafron047/space_travelers_hub/issues).
+Feel free to check the [issues page](https://github.com/Zafron047/Heartland_Humane/issues).
 
 <!-- SUPPORT -->
 
